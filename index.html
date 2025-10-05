@@ -5,10 +5,14 @@
     <title>book-gen</title>
   </head>
   <body>
-    <form method="post">
-      <label>Write your inpiration</label>
-      <textarea></textarea>      
+    <form action="http://localhost:3000/gen" method="post">
+      <p>
+      <label for="msg">Inspiration</label>
+      <textarea id="msg" name="usr_msg">I want to read a book about ...</textarea>      
+      </p>
+      <p class="button">
+        <button type="submit">Submit</button>      
+      </p>
     </form>
-    <button onclick="window.location.href = 'books.html'">Generate</button>      
   </body>
 </html>
